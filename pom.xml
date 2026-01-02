@@ -4,9 +4,23 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>me.zain.projectkorra</groupId>
     <artifactId>ProjectKorraCustom</artifactId>
     <version>1.0</version>
+
+    <!-- REQUIRED REPOS -->
+    <repositories>
+        <repository>
+            <id>spigotmc</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+
+        <repository>
+            <id>projectkorra</id>
+            <url>https://repo.projectkorra.com/repository/maven-public/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -15,10 +29,11 @@
             <version>1.9.0</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.20-R0.1-SNAPSHOT</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.20.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -36,4 +51,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
