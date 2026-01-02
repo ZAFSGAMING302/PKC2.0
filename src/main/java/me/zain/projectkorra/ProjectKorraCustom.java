@@ -6,6 +6,6 @@ public class ProjectKorraCustom extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Plugin successfully started (no ProjectKorra dependency).");
+        getLogger().info("Plugin loaded successfully (no Spigot/API features).");
     }
 }
